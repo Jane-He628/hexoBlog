@@ -1,242 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
+     <link rel="shortcut icon" href= /img/favicon.ico >
+    <title>
+        JeslieHe个人博客
+    </title>
+    <meta name="description" content= 嘿，我是JeslieHe～这是我的子站，用于展示写的Hexo主题：Coder。欢迎访问！ >
+    <meta name="keywords" content= Blog,Hexo,Theme,JeslieHe >
+    
+<link rel="stylesheet" href="/hexoBlog/libs/highlight/styles/monokai-sublime.css">
 
-  
-  <title>JeslieHe个人博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="JeslieHe个人博客">
-<meta property="og:url" content="https://jane-he628.github.io/hexoBlog/index.html">
-<meta property="og:site_name" content="JeslieHe个人博客">
-<meta property="og:locale">
-<meta property="article:author" content="JeslieHe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/hexoBlog/atom.xml" title="JeslieHe个人博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
+    
+<link rel="stylesheet" href="/hexoBlog/libs/font-awesome/css/font-awesome.min.css">
+
+    
 <link rel="stylesheet" href="/hexoBlog/css/style.css">
 
 <meta name="generator" content="Hexo 5.2.0"></head>
+<body id="bodyx">
+    <div class="hd logodiv">
+    <img src="/hexoBlog/img/male.png" class="logopng" alt="logo">
+    <p class="logot">
+         JeslieHe个人博客 
+         <span class="logo_2"></span>
+        <h3 class="words" style="font-weight: bold;font-family: Georgia;"> 
+            纵有疾风起，人生不言弃。 
+        </h3>
+    </p>
+</div>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/hexoBlog/" id="logo">JeslieHe个人博客</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+
+<div class="hd">
+    <ol class="breadcrumb">
         
-          <a class="main-nav-link" href="/hexoBlog/">Home</a>
+            <li><a class="ba" href="/hexoBlog/about">关于我👀</a></li>
         
-          <a class="main-nav-link" href="/hexoBlog/archives">Archives</a>
+            <li><a class="ba" target="_blank" rel="noopener" href="http://42.194.193.249:3240">访问主站🎉</a></li>
         
-      </nav>
-      <nav id="sub-nav">
+            <li><a class="ba" target="_blank" rel="noopener" href="https://github.com/jane-he628">GitHub🐒</a></li>
         
-          <a id="nav-rss-link" class="nav-icon" href="/hexoBlog/atom.xml" title="RSS Feed"></a>
+
+            
+<script src="/hexoBlog/libs/jquery.min.js"></script>
+
+            
+<script src="/hexoBlog/js/search.js"></script>
+
+            
+                <form class="site-search-form">
+                    <i class="fa fa-search" id="search-logo"><input type="text" id="local-search-input" class="st-search-input" /></i>
+                </form>
+                <div id="local-search-result" class="local-search-result-cls"></div>
+            
+            <script type="text/javascript" id="local.search.active">
+                var inputArea       = document.querySelector("#local-search-input");
+                var getSearchFile = function(){
+                    var path = "/search.xml";
+                    searchFunc(path, 'local-search-input', 'local-search-result');
+                }
+                inputArea.onfocus = function(){ getSearchFile() }
+
+                var $resetButton = $("#search-form .fa-times");
+                var $resultArea = $("#local-search-result");
+
+                inputArea.oninput = function(){ $resetButton.show(); }
+                resetSearch = function(){
+                    $resultArea.html("");
+                    document.querySelector("#search-form").reset();
+                    $resetButton.hide();
+                    $(".no-result").hide();
+                }
+                inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+                //No search result
+                $resultArea.bind("DOMNodeRemoved DOMNodeInserted", function(e) {
+                    if (!$(e.target).text()) {
+                        $(".no-result").show(100);
+                    } else {
+                        $(".no-result").hide();
+                    }
+                })
+            </script>
+
+    </ol>
+    <hr>
+</div>
+<div class="hd">
+    
+    
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://jane-he628.github.io/hexoBlog"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-手写前端分页效果" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/hexoBlog/2020/10/29/%E6%89%8B%E5%86%99%E5%89%8D%E7%AB%AF%E5%88%86%E9%A1%B5%E6%95%88%E6%9E%9C/" class="article-date">
-  <time datetime="2020-10-29T02:48:22.000Z" itemprop="datePublished">2020-10-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/hexoBlog/2020/10/29/%E6%89%8B%E5%86%99%E5%89%8D%E7%AB%AF%E5%88%86%E9%A1%B5%E6%95%88%E6%9E%9C/">手写前端分页效果</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>需求：实现分页请求表格数据，ajax暂时没写，只写了分页的功能。<br>效果图：<br>当页数是第一页的时候，首页和向前那个按钮处于禁止点击的状态<br><img src="https://img-blog.csdnimg.cn/20200518105351493.png" alt="在这里插入图片描述"><br>各个按钮都正常的状态<br><img src="https://img-blog.csdnimg.cn/2020051810552517.png" alt="在这里插入图片描述"><br>当页数是第一页的时候，首页和向前那个按钮处于禁止点击的状态<br><img src="https://img-blog.csdnimg.cn/20200518105542329.png" alt="在这里插入图片描述"><br>各部分的代码如下：<br>html部分：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 分页 --&gt;</span><br><span class="line">	&lt;div class&#x3D;&quot;pageBox&quot;&gt;</span><br><span class="line">		&lt;div class&#x3D;&quot;pageTotal&quot;&gt;共&lt;span id&#x3D;&quot;dataLength&quot;&gt;88&lt;&#x2F;span&gt;条&lt;&#x2F;div&gt;</span><br><span class="line">		&lt;div class&#x3D;&quot;pageContent&quot;&gt;</span><br><span class="line">			&lt;button class&#x3D;&#39;firstPage&#39;&gt;首页&lt;&#x2F;button&gt;</span><br><span class="line">			&lt;button class&#x3D;&quot;prevPage&quot;&gt;&lt;&#x2F;button&gt;</span><br><span class="line">			&lt;button class&#x3D;&quot;showPage&quot;&gt;&lt;&#x2F;button&gt;</span><br><span class="line">			&lt;button class&#x3D;&quot;nextPage&quot;&gt;&lt;&#x2F;button&gt;</span><br><span class="line">			&lt;button class&#x3D;&quot;lastPage&quot;&gt;尾页&lt;&#x2F;button&gt;</span><br><span class="line">		&lt;&#x2F;div&gt;</span><br><span class="line">		&lt;div class&#x3D;&quot;selectSize&quot;&gt;</span><br><span class="line">			&lt;div&gt;&lt;span class&#x3D;&quot;numSelect&quot;&gt;10&lt;&#x2F;span&gt; &lt;span&gt;条&#x2F;页&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;</span><br><span class="line">			&lt;div class&#x3D;&quot;icona&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">		&lt;&#x2F;div&gt;</span><br><span class="line">		&lt;!-- &lt;div id&#x3D;&quot;test1&quot; style&#x3D;&quot;display: inline-block;margin-left: 210px;&quot;&gt;&lt;&#x2F;div&gt; --&gt;</span><br><span class="line">		&lt;div class&#x3D;&quot;goPage&quot;&gt;&lt;span&gt;跳至&lt;&#x2F;span&gt;&lt;input type&#x3D;&quot;text&quot;  id&#x3D;&quot;goPageInp&quot;&gt;&lt;span&gt;页&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;</span><br><span class="line">		&lt;ul class&#x3D;&quot;pageSelectShow&quot;&gt;</span><br><span class="line">			&lt;li data-num&#x3D;&quot;10&quot;&gt;10条&#x2F;页&lt;&#x2F;li&gt;</span><br><span class="line">			&lt;li data-num&#x3D;&quot;20&quot;&gt;20条&#x2F;页&lt;&#x2F;li&gt;</span><br><span class="line">			&lt;li data-num&#x3D;&quot;50&quot;&gt;50条&#x2F;页&lt;&#x2F;li&gt;</span><br><span class="line">			&lt;li data-num&#x3D;&quot;100&quot;&gt;100条&#x2F;页&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;&#x2F;ul&gt;</span><br><span class="line">	&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
-<p>CSS部分：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br></pre></td><td class="code"><pre><span class="line">	* &#123;</span><br><span class="line">			<span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">			<span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="selector-tag">body</span>,</span><br><span class="line">		<span class="selector-tag">html</span> &#123;</span><br><span class="line">			<span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">			<span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">		<span class="selector-class">.pageBox</span>&#123;</span><br><span class="line">			<span class="attribute">width</span>: <span class="number">60%</span>;</span><br><span class="line">			<span class="attribute">margin-left</span>: <span class="number">20%</span>;</span><br><span class="line">			<span class="attribute">margin-top</span>: <span class="number">200px</span>;</span><br><span class="line">			<span class="attribute">position</span>: relative;</span><br><span class="line">			<span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="selector-class">.pageBox</span>&gt;<span class="selector-tag">div</span>&#123;</span><br><span class="line">			<span class="attribute">float</span>: left;</span><br><span class="line">			<span class="attribute">margin</span>: <span class="number">0</span> <span class="number">10px</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="selector-class">.pageContent</span>&gt;<span class="selector-tag">button</span>&#123;</span><br><span class="line">			<span class="attribute">float</span>: left;</span><br><span class="line">			<span class="attribute">margin</span>: <span class="number">0px</span> <span class="number">4px</span>;</span><br><span class="line">			<span class="attribute">border</span>: none;</span><br><span class="line">			<span class="attribute">outline</span>: none;</span><br><span class="line">		&#125;</span><br><span class="line"><span class="selector-class">.goPage</span>,<span class="selector-class">.pageTotal</span>&#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">vertical-align</span>: middle;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.goPage</span>&#123;</span><br><span class="line">	<span class="attribute">right</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.goPage</span> <span class="selector-tag">span</span>&#123;</span><br><span class="line">	<span class="attribute">display</span>: inline-block;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#999999</span>;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.goPage</span> <span class="selector-tag">input</span>&#123;</span><br><span class="line">	<span class="attribute">display</span>: inline-block;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0px</span> <span class="number">5px</span>;</span><br><span class="line">	<span class="attribute">border</span>: none;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.pageTotal</span>&#123;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#999</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.pageTotal</span> <span class="selector-tag">span</span>&#123;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0</span> <span class="number">3px</span>;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#333</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.selectSize</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">vertical-align</span>: middle;</span><br><span class="line">	<span class="attribute">position</span>: relative;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.selectSize</span>&gt;<span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">float</span>: left;</span><br><span class="line">	<span class="attribute">margin-left</span>: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.icona</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;./down.png&#x27;</span>);</span><br><span class="line">	<span class="attribute">background-size</span>: <span class="number">100%</span> <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">background-position</span>: center center;</span><br><span class="line">	<span class="attribute">margin-top</span>: <span class="number">5px</span>;</span><br><span class="line">	<span class="attribute">cursor</span>: pointer;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">right</span>: <span class="number">6px</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.pageSelectShow</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">162px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">	<span class="attribute">overflow-y</span>: auto;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">170px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">400px</span>;</span><br><span class="line">	<span class="attribute">list-style</span>: none;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">	<span class="attribute">display</span>: none;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.pageSelectShow</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">40px</span>;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">40px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">cursor</span>: pointer;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.pageContent</span>&gt;<span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">cursor</span>: pointer;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.firstPage</span>,<span class="selector-class">.lastPage</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">60px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.firstPage</span>,<span class="selector-class">.lastPage</span>,<span class="selector-class">.showPage</span>&#123;</span><br><span class="line">	<span class="attribute">background</span>:<span class="built_in">rgb</span>(<span class="number">67</span>, <span class="number">133</span>, <span class="number">255</span>);</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.showPage</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">40px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.prevPage</span>,<span class="selector-class">.nextPage</span>&#123;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">	<span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">	<span class="attribute">background-position</span>: center center;</span><br><span class="line">	<span class="attribute">background-size</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.prevPage</span>&#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;./prev.png&#x27;</span>);</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.nextPage</span>&#123;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;./next.png&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.nowtouch</span>&#123;</span><br><span class="line">	<span class="attribute">color</span>:<span class="number">#009E94</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>JS代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//点击显示选择条数的div</span></span><br><span class="line"><span class="keyword">var</span> showFlag = <span class="literal">true</span>;</span><br><span class="line"><span class="keyword">var</span> numcount = <span class="number">1</span>;<span class="comment">//默认第一页</span></span><br><span class="line"><span class="keyword">var</span> dataLength =<span class="number">10000</span>;</span><br><span class="line">$(<span class="string">&#x27;#dataLength&#x27;</span>).text(dataLength);</span><br><span class="line"><span class="keyword">var</span> allCount = <span class="built_in">Math</span>.ceil(dataLength / <span class="number">10</span>);</span><br><span class="line"><span class="built_in">console</span>.log(allCount);</span><br><span class="line"><span class="comment">//分页跳转</span></span><br><span class="line">$(<span class="string">&#x27;.showPage&#x27;</span>).text(numcount)</span><br><span class="line"><span class="keyword">if</span> (numcount === <span class="number">1</span>) &#123;</span><br><span class="line">	firstDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (numcount === allCount) &#123;</span><br><span class="line">	lastDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$(<span class="string">&#x27;.icona&#x27;</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (showFlag) &#123;</span><br><span class="line">		$(<span class="string">&#x27;.pageSelectShow&#x27;</span>).css(&#123;</span><br><span class="line">			<span class="string">&#x27;display&#x27;</span>: <span class="string">&#x27;block&#x27;</span></span><br><span class="line">		&#125;);</span><br><span class="line">		$(<span class="string">&#x27;.icona&#x27;</span>).css(&#123;</span><br><span class="line">			<span class="string">&#x27;background-image&#x27;</span>: <span class="string">&#x27;url(&#x27;</span> + <span class="string">&#x27;./up.png&#x27;</span> + <span class="string">&#x27;)&#x27;</span></span><br><span class="line">		&#125;)</span><br><span class="line">		showFlag = !showFlag;</span><br><span class="line"></span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		$(<span class="string">&#x27;.pageSelectShow&#x27;</span>).css(&#123;</span><br><span class="line">			<span class="string">&#x27;display&#x27;</span>: <span class="string">&#x27;none&#x27;</span></span><br><span class="line">		&#125;)</span><br><span class="line">		$(<span class="string">&#x27;.icona&#x27;</span>).css(&#123;</span><br><span class="line">			<span class="string">&#x27;background-image&#x27;</span>: <span class="string">&#x27;url(&#x27;</span> + <span class="string">&#x27;./down.png&#x27;</span> + <span class="string">&#x27;)&#x27;</span></span><br><span class="line">		&#125;)</span><br><span class="line">		showFlag = !showFlag;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//点击选择条数</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line">$(<span class="string">&#x27;.pageSelectShow li&#x27;</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(e.target.innerHTML)</span><br><span class="line">	<span class="keyword">var</span> countLength = e.target.innerHTML</span><br><span class="line">	<span class="function"><span class="title">for</span>(<span class="params"><span class="keyword">var</span> i = <span class="number">0</span>; i &lt; countLength.length;i++</span>)</span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(countLength[i])</span><br><span class="line">	&#125;</span><br><span class="line">	$(<span class="string">&#x27;.numSelect&#x27;</span>).text($(<span class="built_in">this</span>).data(<span class="string">&#x27;num&#x27;</span>));</span><br><span class="line">	allCount = <span class="built_in">Math</span>.ceil(dataLength /  e.target.dataset.num);</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="title">if</span>(<span class="params">allCount == <span class="number">1</span></span>)</span>&#123;</span><br><span class="line">		firstDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>);</span><br><span class="line">		lastDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		firstDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">     lastDis(<span class="literal">false</span>, <span class="string">&#x27;pointer&#x27;</span>, <span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">	&#125;</span><br><span class="line">	$(<span class="built_in">this</span>).addClass(<span class="string">&#x27;nowtouch&#x27;</span>).siblings().removeClass(<span class="string">&#x27;nowtouch&#x27;</span>)</span><br><span class="line">	$(<span class="string">&#x27;.pageSelectShow&#x27;</span>).css(&#123;</span><br><span class="line">		<span class="string">&#x27;display&#x27;</span>: <span class="string">&#x27;none&#x27;</span></span><br><span class="line">	&#125;)</span><br><span class="line">	$(<span class="string">&#x27;.icona&#x27;</span>).css(&#123;</span><br><span class="line">		<span class="string">&#x27;background-image&#x27;</span>: <span class="string">&#x27;url(&#x27;</span> + <span class="string">&#x27;./down.png&#x27;</span> + <span class="string">&#x27;)&#x27;</span></span><br><span class="line">	&#125;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//点击首页</span></span><br><span class="line">$(<span class="string">&#x27;.firstPage&#x27;</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">	numcount = <span class="number">1</span>;</span><br><span class="line">	$(<span class="string">&#x27;.showPage&#x27;</span>).text(numcount);</span><br><span class="line">	firstDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">	lastDis(<span class="literal">false</span>, <span class="string">&#x27;pointer&#x27;</span>, <span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//点击上一页</span></span><br><span class="line">$(<span class="string">&#x27;.prevPage&#x27;</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> prevNum = <span class="built_in">Number</span>($(<span class="string">&#x27;.showPage&#x27;</span>).text());</span><br><span class="line">	prevNum--;</span><br><span class="line">	$(<span class="string">&#x27;.showPage&#x27;</span>).text(prevNum);</span><br><span class="line">	<span class="keyword">if</span> (prevNum == numcount) &#123;</span><br><span class="line">		firstDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		lastDis(<span class="literal">false</span>, <span class="string">&#x27;pointer&#x27;</span>, <span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//点击下一页</span></span><br><span class="line">$(<span class="string">&#x27;.nextPage&#x27;</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> prevNum = <span class="built_in">Number</span>($(<span class="string">&#x27;.showPage&#x27;</span>).text());</span><br><span class="line">	prevNum++</span><br><span class="line">	firstDis(<span class="literal">false</span>, <span class="string">&#x27;pointer&#x27;</span>, <span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">	$(<span class="string">&#x27;.showPage&#x27;</span>).text(prevNum);</span><br><span class="line">	<span class="keyword">if</span> (prevNum == allCount) &#123;</span><br><span class="line">		lastDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		lastDis(<span class="literal">false</span>, <span class="string">&#x27;pointer&#x27;</span>, <span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//点击尾页</span></span><br><span class="line">$(<span class="string">&#x27;.lastPage&#x27;</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">	numcount = allCount</span><br><span class="line">	$(<span class="string">&#x27;.showPage&#x27;</span>).text(allCount);</span><br><span class="line">	firstDis(<span class="literal">false</span>, <span class="string">&#x27;pointer&#x27;</span>, <span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">	lastDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//当页码为1,禁止点击的函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">firstDis</span>(<span class="params">boolVal, cursorVal, opacityVal</span>) </span>&#123;</span><br><span class="line">	$(<span class="string">&#x27;.firstPage&#x27;</span>).attr(<span class="string">&#x27;disabled&#x27;</span>, boolVal);</span><br><span class="line">	$(<span class="string">&#x27;.firstPage&#x27;</span>).css(&#123;</span><br><span class="line">		<span class="string">&#x27;cursor&#x27;</span>: cursorVal,</span><br><span class="line">		<span class="string">&#x27;opacity&#x27;</span>: opacityVal</span><br><span class="line">	&#125;)</span><br><span class="line">	$(<span class="string">&#x27;.prevPage&#x27;</span>).attr(<span class="string">&#x27;disabled&#x27;</span>, boolVal);</span><br><span class="line">	$(<span class="string">&#x27;.prevPage&#x27;</span>).css(&#123;</span><br><span class="line">		<span class="string">&#x27;cursor&#x27;</span>: cursorVal,</span><br><span class="line">		<span class="string">&#x27;opacity&#x27;</span>: opacityVal</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//当页码为20,禁止点击的函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">lastDis</span>(<span class="params">boolVal, cursorVal, opacityVal</span>) </span>&#123;</span><br><span class="line">	$(<span class="string">&#x27;.lastPage&#x27;</span>).attr(<span class="string">&#x27;disabled&#x27;</span>, boolVal);</span><br><span class="line">	$(<span class="string">&#x27;.lastPage&#x27;</span>).css(&#123;</span><br><span class="line">		<span class="string">&#x27;cursor&#x27;</span>: cursorVal,</span><br><span class="line">		<span class="string">&#x27;opacity&#x27;</span>: opacityVal</span><br><span class="line">	&#125;)</span><br><span class="line">	$(<span class="string">&#x27;.nextPage&#x27;</span>).attr(<span class="string">&#x27;disabled&#x27;</span>, boolVal);</span><br><span class="line">	$(<span class="string">&#x27;.nextPage&#x27;</span>).css(&#123;</span><br><span class="line">		<span class="string">&#x27;cursor&#x27;</span>: cursorVal,</span><br><span class="line">		<span class="string">&#x27;opacity&#x27;</span>: opacityVal</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//键盘事件</span></span><br><span class="line">$(<span class="string">&#x27;#goPageInp&#x27;</span>).on(<span class="string">&#x27;keydown&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (e.keyCode == <span class="number">13</span>) &#123;</span><br><span class="line">		<span class="keyword">var</span> vals = e.target.value;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="built_in">Number</span>(vals));</span><br><span class="line">		$(<span class="built_in">this</span>).blur();</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">Number</span>(vals) &amp;&amp; <span class="built_in">Number</span>(vals) &lt;=allCount )&#123;</span><br><span class="line">			$(<span class="string">&#x27;.showPage&#x27;</span>).text(vals);</span><br><span class="line">		<span class="keyword">if</span> (vals == allCount) &#123;</span><br><span class="line">			firstDis(<span class="literal">false</span>, <span class="string">&#x27;pointer&#x27;</span>, <span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">			lastDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (vals == numcount) &#123;</span><br><span class="line">			lastDis(<span class="literal">false</span>, <span class="string">&#x27;pointer&#x27;</span>, <span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">			firstDis(<span class="literal">true</span>, <span class="string">&#x27;not-allowed&#x27;</span>, <span class="string">&#x27;0.5&#x27;</span>)</span><br><span class="line">		&#125;</span><br><span class="line">		e.target.value = <span class="string">&#x27;&#x27;</span></span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			alert(<span class="string">&#x27;输入错误&#x27;</span>);</span><br><span class="line">			e.target.value = <span class="string">&#x27;&#x27;</span></span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jane-he628.github.io/hexoBlog/2020/10/29/%E6%89%8B%E5%86%99%E5%89%8D%E7%AB%AF%E5%88%86%E9%A1%B5%E6%95%88%E6%9E%9C/" data-id="ckgu94emm0001lrujabek1djt" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/hexoBlog/2020/10/28/hello-world/" class="article-date">
-  <time datetime="2020-10-28T06:34:19.901Z" itemprop="datePublished">2020-10-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+            <div class="titlex">
+                <p><span class="jing"></span><span style="color: #6d9ee7;"> 公元</span> 
+                 2020年 🕛
+                </p>
+            </div>
+            
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/hexoBlog/2020/10/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
+        <a class="flink" href="/hexoBlog/2020/10/29/%E6%89%8B%E5%86%99%E5%89%8D%E7%AB%AF%E5%88%86%E9%A1%B5%E6%95%88%E6%9E%9C/">
+            <div class="list">
+                <div class="postname">
+                    手写前端分页效果
+                </div>
+                <div class="posttime">
+                    October 29th
+                </div>
+            </div>
+        </a>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://jane-he628.github.io/hexoBlog/2020/10/28/hello-world/" data-id="ckgu94eme0000lruj68r11i0b" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/hexoBlog/archives/2020/10/">October 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
         
-          <li>
-            <a href="/hexoBlog/2020/10/29/%E6%89%8B%E5%86%99%E5%89%8D%E7%AB%AF%E5%88%86%E9%A1%B5%E6%95%88%E6%9E%9C/">手写前端分页效果</a>
-          </li>
-        
-          <li>
-            <a href="/hexoBlog/2020/10/28/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 JeslieHe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/hexoBlog/" class="mobile-nav-link">Home</a>
-  
-    <a href="/hexoBlog/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+        <a class="flink" href="/hexoBlog/2020/10/28/hello-world/">
+            <div class="list">
+                <div class="postname">
+                    Hello World
+                </div>
+                <div class="posttime">
+                    October 28th
+                </div>
+            </div>
+        </a>
     
+</div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <div class="footer" id="footer">
+    <p><h4>版权所有 © 2020 | 作者: JeslieHe | 主题 By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">本站浏览总访问量: <span id="busuanzi_value_site_pv"></span></span>
+        <span class="post-meta-divider">|</span>
+        <span id="busuanzi_container_site_uv">本站访问人数: <span id="busuanzi_value_site_uv"></span></span>
+    
+    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
+        <input type="checkbox" name="switch" id="update_style">
+        <span class="el-switch-style"></span>
+    </label>
+
+    <!--         <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script> -->
+</p>
+</div>
+
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="NOsswOncKgc8HOxqo9oxIWlX-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="z1FihjWEbS8uIfUQdmCtK7zz">
+
+<script src="/hexoBlog/libs/jquery.min.js"></script>
 
 
-  
-<link rel="stylesheet" href="/hexoBlog/fancybox/jquery.fancybox.css">
+<script src="/hexoBlog/libs/highlight/highlight.pack.js"></script>
 
-  
-<script src="/hexoBlog/fancybox/jquery.fancybox.pack.js"></script>
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
 
+<script src="/hexoBlog/js/js.js"></script>
 
-
-
-<script src="/hexoBlog/js/script.js"></script>
-
-
-
-
-  </div>
+<style type="text/css">
+.v * {
+color: #698fca;
+}
+.v .vlist .vcard .vhead .vsys {
+color: #3a3e4a;
+}
+.v .vlist .vcard .vh .vmeta .vat {
+color: #638fd5;
+}
+.v .vlist .vcard .vhead .vnick {
+color: #6ba1ff;
+}
+.v a {
+color: #8696b1;
+}
+.v .vlist .vcard .vhead .vnick:hover {
+color: #669bfc;
+}
+</style>
+    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 </body>
 </html>
